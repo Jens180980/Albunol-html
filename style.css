@@ -1,0 +1,180 @@
+/*
+    Fonts import
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    Global variables
+*/
+
+body {
+  --prim-color: #dbad6a;
+  --sec-color: #cf995f;
+  --txt-dark: #101010;
+  --txt-light: #f8f8f8;
+  --bg-light: #d9d9d9;
+  --bg-dark: #96897b;
+  --highlight: #d0ce7c;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Caveat", cursive;
+  color: var(--txt-dark);
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 64px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 24px;
+}
+
+p,
+a,
+button {
+  font-family: "Work Sans", sans-serif;
+}
+
+/*
+    Helper classes
+*/
+
+.btn {
+  background-color: var(--highlight);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--txt-dark);
+  border-radius: 25px;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.6s linear;
+}
+
+/*
+    Header
+*/
+
+header {
+  background-color: var(--sec-color);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 48px;
+}
+
+/*
+    Hero
+*/
+
+.hero {
+  background-image: url("./Images/Hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero a {
+  margin-bottom: 140px;
+  font-size: 36px;
+}
+
+.hero a:hover {
+  box-shadow: 5px 5px 10px var(--txt-dark);
+}
+
+/*
+    Real Estate Information section
+*/
+
+.info-outer {
+  background-color: var(--prim-color);
+  padding: 80px 0;
+}
+
+#re__header-left {
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+
+.info-inner {
+  margin-left: auto;
+  width: 80%;
+  background-color: var(--bg-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info__facts-outer {
+  background-color: var(--bg-light);
+  padding: 20px;
+  margin: 10% 0 10% -20%;
+  width: 50vw;
+}
